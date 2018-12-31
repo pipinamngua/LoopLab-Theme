@@ -1,0 +1,77 @@
+$bg-color:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+$dark-overlay-color: rgba(0,0,0,0.7);
+$font-size: 20px;
+body {
+	background-color: $bg-color;
+	color: $font-color;
+}
+
+.navbar {
+	border-bottom:$primary-color 3px solid;
+	opacity: 0.8;
+}
+
+#home-section {
+	background: url('../img/people-mother-family-father.jpg') no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 700px;
+
+	.dark-overlay {
+		background-color: $dark-overlay-color;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		min-height: 700px;
+	}
+
+	.home-inner {
+		padding-top: 150px;
+	}
+
+	.fa {
+		color: $primary-color;
+		background: #fff;
+		padding: 4px;
+		border-radius: 5px;
+		font-size: $font-size;
+	}
+}
+
+
+#explore-section {
+	background: #fff;
+	color: #33333385;
+	.fa {
+		background: gray;
+		color: #fff;
+		font-size: $font-size;
+		border-radius: 5px;
+		padding: 4px;
+	}
+}
+
+#create-head-section {
+	background: $primary-color;
+}
+
+#create-section {
+	.fa {
+		background: #fff;
+		color: $primary-color;
+		padding: 4px;
+		border-radius: 3px;
+	}
+}
+
+#share-head-section {
+	background: $primary-color;
+}
+
+#share-section {
+	background: #fff;
+	color: gray;
+}
